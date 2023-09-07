@@ -8,7 +8,7 @@ export type GalleryImage = {
   urls: StringObject;
   sizes: StringObject;
   metadata: Object;
-  versions?: NumberObject;
+  versions: NumberObject;
   urlsLowquality?: StringObject;
   ignore?: Object;
 };

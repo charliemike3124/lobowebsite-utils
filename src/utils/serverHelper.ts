@@ -8,6 +8,6 @@ export const ServerHelper = {
     return `${websiteName}.${Feature.images}.${id}.${compressedWidth}`;
   },
   formGalleryCacheKey(websiteName: string, id: string, key: string, compressedWidth: number = 0) {
-    return `${websiteName}.${Feature.images}.${id}.${key}.${compressedWidth}`;
+    return `${websiteName}.${Feature.gallery}.${id}.${key}.${compressedWidth}`;
   },
 };

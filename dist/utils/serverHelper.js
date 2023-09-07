@@ -10,6 +10,6 @@ exports.ServerHelper = {
         return `${websiteName}.${enums_1.Feature.images}.${id}.${compressedWidth}`;
     },
     formGalleryCacheKey(websiteName, id, key, compressedWidth = 0) {
-        return `${websiteName}.${enums_1.Feature.images}.${id}.${key}.${compressedWidth}`;
+        return `${websiteName}.${enums_1.Feature.gallery}.${id}.${key}.${compressedWidth}`;
     },
 };
