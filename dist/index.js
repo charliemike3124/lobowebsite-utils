@@ -23,3 +23,4 @@ __exportStar(require("./models/lobo-image"), exports);
 __exportStar(require("./models/gallery-image"), exports);
 __exportStar(require("./models/lobo-gallery-object"), exports);
 __exportStar(require("./models/website"), exports);
+__exportStar(require("./models/blog-article"), exports);

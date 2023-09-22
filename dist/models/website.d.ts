@@ -1,6 +1,6 @@
 export type Website = {
-    name: String;
-    accessToken: String;
-    apiUrl: String;
+    name: string;
+    accessToken: string;
+    apiUrl: string;
     hasAccess?: boolean;
 };

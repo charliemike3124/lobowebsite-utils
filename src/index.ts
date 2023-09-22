@@ -7,3 +7,4 @@ export * from './models/lobo-image';
 export * from './models/gallery-image';
 export * from './models/lobo-gallery-object';
 export * from './models/website';
+export * from './models/blog-article';
