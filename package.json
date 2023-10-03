@@ -1,6 +1,6 @@
 {
   "name": "lobowebsites-utils",
-  "version": "1.0.18",
+  "version": "1.0.21",
   "description": "Utils, types and models needed for a lobowebsite",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,5 +12,8 @@
     "build": "tsc && npm publish"
   },
   "author": "LoboWebsites",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
 }

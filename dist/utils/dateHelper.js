@@ -1,38 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DateHelper = void 0;
+const date_fns_1 = require("date-fns");
 exports.DateHelper = {
     getCurrentUTCTimestamp() {
         return new Date().getTime();
     },
     timestampToDate(timestamp) {
-        return new Date(timestamp);
+        let ts = timestamp;
+        if (typeof timestamp === 'string') {
+            ts = parseInt(timestamp);
+        }
+        return new Date(ts);
     },
-    formatDate(date, format) {
-        const getMonthName = (month, length) => {
-            const options = { month: length };
-            return new Intl.DateTimeFormat('en-US', options).format(new Date(2000, month - 1));
-        };
-        const year = date.getFullYear();
-        const month = date.getMonth() + 1;
-        const day = date.getDate();
-        const hours = date.getHours();
-        const minutes = date.getMinutes();
-        const seconds = date.getSeconds();
-        return format
-            .replace(/YYYY/g, year.toString())
-            .replace(/YY/g, year.toString().slice(-2))
-            .replace(/MMMM/g, getMonthName(month, 'long'))
-            .replace(/MMM/g, getMonthName(month, 'short'))
-            .replace(/MM/g, month.toString().padStart(2, '0'))
-            .replace(/M/g, month.toString())
-            .replace(/DD/g, day.toString().padStart(2, '0'))
-            .replace(/D/g, day.toString())
-            .replace(/HH/g, hours.toString().padStart(2, '0'))
-            .replace(/H/g, hours.toString())
-            .replace(/mm/g, minutes.toString().padStart(2, '0'))
-            .replace(/m/g, minutes.toString())
-            .replace(/ss/g, seconds.toString().padStart(2, '0'))
-            .replace(/s/g, seconds.toString());
+    formatDate(date, stringFormat) {
+        return (0, date_fns_1.format)(date, stringFormat);
     },
 };

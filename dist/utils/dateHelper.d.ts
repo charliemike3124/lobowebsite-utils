@@ -1,5 +1,5 @@
 export declare const DateHelper: {
     getCurrentUTCTimestamp(): number;
-    timestampToDate(timestamp: number): Date;
-    formatDate(date: Date, format: string): string;
+    timestampToDate(timestamp: number | string): Date;
+    formatDate(date: Date, stringFormat: string): string;
 };

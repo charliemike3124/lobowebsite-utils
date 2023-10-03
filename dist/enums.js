@@ -6,4 +6,6 @@ var Feature;
     Feature["text"] = "text";
     Feature["images"] = "images";
     Feature["gallery"] = "gallery";
+    Feature["blog"] = "blog";
+    Feature["ecommerce"] = "e-commerce";
 })(Feature || (exports.Feature = Feature = {}));
